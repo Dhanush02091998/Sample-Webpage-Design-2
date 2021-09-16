@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+li{
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 0 35px;
+}
+#header .nav-list ul li:hover a{
+    font-weight: bold;
+    color: rgb(31, 29, 1);
+}
+#header{
+    position: fixed; 
+    z-index: 2;
+    width: 100vw;   
+    height: auto;
+}
+.header{
+    min-height: 8vh;
+    background-color: rgba(54, 56, 0, 0.158);
+}
+.header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 250px;
+}
+#header .nav-list ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#banner{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgb(63, 46, 0)), url(images/salon.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.banner-text{
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+.banner-text h3{
+    font-family: 'Handlee', cursive;
+    font-size:35px ;
+}
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+}
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+.banner-btn{
+    margin: 70px auto 0;
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border: 0.5px solid white;
+    border-radius: 25px;
+    font-size: 21px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: 0.2s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+    border-radius: 25px;
+}
+.banner-btn a:hover {
+    color: black;
+}  
+
+#feature{
+    width: 100%;
+    padding: 70px 0;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #009688;;
+    font-weight: bold;
+}
+.title-text h1{
+    font-size: 50px;
+}
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: center;
+    text-align: center;
+}
+.features{
+    flex-basis: 50%;
+}
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.features-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.features h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #009688;
+    font-size: 50px;
+}
+.features-desc{
+    display: flex;
+    align-items:center ;
+    margin-bottom: 40px;
+}
+.feature-icon img{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    border: 1px solid #009688;
+}
+.feature-text p{
+    padding: 0 20px;
+    text-align: initial;
+    font-size: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 46, 0);
+    min-height: 100px;
+}
+.footer p{
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 770px){
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .banner-text h3{
+        font-size: 15px;
+    }
+    .banner-btn a{
+        font-size: 15px;
+    }
+}
